@@ -1,0 +1,70 @@
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .accordian {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .title {
+    cursor: pointer;
+    padding: 15px;
+    background: linear-gradient(90deg, #2c78a1 0%, #43a0c8 100%);
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+  
+  .title:hover {
+    background: linear-gradient(90deg, #5b6877 0%, #2e56a7 100%);
+  }
+  
+  .title h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .title span {
+    font-size: 24px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .title.active span {
+    transform: rotate(45deg);
+  }
+  
+  .content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    transition: background 0.3s ease;
+  }
+  
+  .item:not(:last-child) .content {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .item:not(:last-child) .content:hover {
+    background-color: #f0f0f0;
+  }
+  .multiple-selection-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3564a5; 
+    color: #fff; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .multiple-selection-button:hover {
+    background-color: #478ea2; 
+  }
+  
