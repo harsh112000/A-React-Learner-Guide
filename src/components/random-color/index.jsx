@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react'
+import { Link } from 'react-router-dom'
 
 const RandomColor = () => {
     //seeting default colour type to hex
@@ -13,11 +14,10 @@ const RandomColor = () => {
         const hex = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
         let hexColor = '#';
         for(let i = 0; i < 6; i++){
+        
             hexColor += hex[randomColorUtility(hex.length)]
         }
-        console.log(hexColor)
         setColor(hexColor)
-        console.log(setColor)
     }
 
     const handleCreateRandomRgbColor = () =>{
@@ -26,7 +26,6 @@ const RandomColor = () => {
         const b = randomColorUtility(256);
 
         setColor(`rgb(${r},${g},${b})`)
-
     }
 
     useEffect(() => {
@@ -59,7 +58,11 @@ const RandomColor = () => {
             <h1>{color}</h1>
         </div>
         <h1>Generate Random Color</h1>
+        <div className="bottom-right-button">
+        <Link to="/star-rating">Go to Random Color</Link>
+      </div>
     </div>
+    
   )
 }
 
