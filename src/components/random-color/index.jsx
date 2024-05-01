@@ -65,5 +65,4 @@ const RandomColor = () => {
     
   )
 }
-
 export default RandomColor;

@@ -8,6 +8,7 @@ const StarRating = ({ noOfStars = 5 }) => {
 
     const handleClicked = index => {
         setRating(index);
+        console.log()
     };
 
     const handleHover = index => {
