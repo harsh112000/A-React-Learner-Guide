@@ -6,6 +6,7 @@ import StarRating from './components/star-rating';
 import FormValidation from './form-validation';
 // import ImageSlider from './components/image-slider';
 import Carousel from './components/image-slider-static';
+import RandomUser from './components/random-user';
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/form-validation" element={<FormValidation/>} />
         {/* <Route path="/image-slider" element={<ImageSlider url = {'https://picsum.photos/v2/list'} page ={'1'} limit = {10}/>} /> */}
         <Route path="/carousel" element={<Carousel/>} />
+        <Route path="/random-user" element={<RandomUser />} />
 
       </Routes>
     </Router>
